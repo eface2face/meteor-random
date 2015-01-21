@@ -1,5 +1,6 @@
 {
   "name": "meteor-random",
+  "repository": { "type": "git", "url": "https://github.com/eface2face/meteor-random" },
   "version": "1.0.0",
   "description": "",
   "main": "random.js",

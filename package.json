@@ -1,5 +1,5 @@
 {
-  "name": "meteor-random",
+  "name": "meteor-random-window-crypto",
   "repository": {
     "type": "git",
     "url": "https://github.com/eface2face/meteor-random"

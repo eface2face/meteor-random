@@ -1,6 +1,6 @@
-var _ = require("lodash");
-var Meteor = require("meteor-core");
-var Random;
+module.exports=function(Meteor) {
+  var _ = Meteor.underscore;
+  var Random;
 // We use cryptographically strong PRNGs (crypto.getRandomBytes() on the server,
 // window.crypto.getRandomValues() in the browser) when available. If these
 // PRNGs fail, we fall back to the Alea PRNG, which is not cryptographically
@@ -219,4 +219,5 @@ Random.createWithSeeds = function () {
   }
   return new RandomGenerator(arguments);
 };
-module.exports = Random;
+  Meteor.Random = Random;
+};

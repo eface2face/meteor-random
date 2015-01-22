@@ -1,5 +1,5 @@
 var _ = require("lodash");
-var Meteor = require("module-core");
+var Meteor = require("meteor-core");
 // We use cryptographically strong PRNGs (crypto.getRandomBytes() on the server,
 // window.crypto.getRandomValues() in the browser) when available. If these
 // PRNGs fail, we fall back to the Alea PRNG, which is not cryptographically
